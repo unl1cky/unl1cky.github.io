@@ -3,7 +3,7 @@ let isEnglish = true;
 function toggleLanguage() {
     if (isEnglish) {
         document.getElementById("title").innerText = "Добро пожаловать на мой сайт";
-        document.getElementById("intro").innerText = "Привет, я [Ваше Имя], [Ваша профессия или интерес].";
+        document.getElementById("intro").innerText = "Привет, я Димаш, [Ваша профессия или интерес].";
 
         document.getElementById("about-title").innerText = "Обо мне";
         document.getElementById("about-text").innerText = "Привет! Я увлекаюсь [ваши интересы]. Я специализируюсь в [ваши навыки]. В свободное время мне нравится [ваши хобби].";
