@@ -3,21 +3,21 @@ let isEnglish = true;
 function toggleLanguage() {
     if (isEnglish) {
         document.getElementById("title").innerText = "Добро пожаловать на мой сайт";
-        document.getElementById("intro").innerText = "Привет, я Димаш, [Ваша профессия или интерес].";
+        document.getElementById("intro").innerText = "Привет, я Димаш, я играю вартандар .";
 
         document.getElementById("about-title").innerText = "Обо мне";
-        document.getElementById("about-text").innerText = "Привет! Я увлекаюсь [ваши интересы]. Я специализируюсь в [ваши навыки]. В свободное время мне нравится [ваши хобби].";
+        document.getElementById("about-text").innerText = "Привет! Я увлекаюсь дебатами. Я специализируюсь в английском. В свободное время мне нравится вартандар.";
 
         document.getElementById("projects-title").innerText = "Мои проекты";
-        document.getElementById("project1").innerText = "Описание вашего проекта.";
-        document.getElementById("project2").innerText = "Описание вашего проекта.";
-        document.getElementById("project3").innerText = "Описание вашего проекта.";
+        document.getElementById("project1").innerText = "сигма.";
+        document.getElementById("project2").innerText = "альфа.";
+        document.getElementById("project3").innerText = "Сугма.";
 
         document.getElementById("contact-title").innerText = "Связаться со мной";
-        document.getElementById("email").innerText = "Электронная почта: your.email@example.com";
-        document.getElementById("github").innerHTML = "GitHub: <a href='https://github.com/yourusername' target='_blank'>github.com/yourusername</a>";
+        document.getElementById("email").innerText = "Электронная почта: dnur5345@gmail.com";
+        document.getElementById("github").innerHTML = "GitHub: <a href='https://github.com/unl1cky' target='_blank'>github.com/unl1cky</a>";
 
-        document.getElementById("footer-text").innerText = "© 2025 [Ваше Имя]. Все права защищены.";
+        document.getElementById("footer-text").innerText = "© 2025 Димаш. Все права защищены.";
 
         document.getElementById("translate-btn").innerText = "Translate to English";
     } else {
