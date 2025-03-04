@@ -14,12 +14,12 @@ function toggleLanguage() {
         document.getElementById("project3").innerText = "Сугма.";
 
         document.getElementById("contact-title").innerText = "Связаться со мной";
-        document.getElementById("email").innerText = "Электронная почта: dnur5345@gmail.com";
-        document.getElementById("github").innerHTML = "GitHub: <a href='https://github.com/unl1cky' target='_blank'>github.com/unl1cky</a>";
+        document.getElementById("email").innerText = " "📧 Электронная почта: dnur5345@gmail.com";
+        document.getElementById("github").innerHTML = "💻GitHub: <a href='https://github.com/unl1cky' target='_blank'>github.com/unl1cky</a>";
 
         document.getElementById("footer-text").innerText = "© 2025 Димаш. Все права защищены.";
 
-        document.getElementById("translate-btn").innerText = "Translate to English";
+        document.getElementById("translate-btn").innerText = "🌍 Translate to English";
     } else {
         document.getElementById("title").innerText = "Welcome to My Website";
         document.getElementById("intro").innerText = "Hi, I'm Dimash, a debater.";
@@ -33,12 +33,12 @@ function toggleLanguage() {
         document.getElementById("project3").innerText = "Sugma.";
 
         document.getElementById("contact-title").innerText = "Contact Me";
-        document.getElementById("email").innerText = "Email: dnur5345@gmail.com";
-        document.getElementById("github").innerHTML = "GitHub: <a href='https://github.com/unl1cky' target='_blank'>github.com/unl1cky</a>";
+        document.getElementById("email").innerText = "📧 Email: dnur5345@gmail.com";
+        document.getElementById("github").innerHTML = "💻 GitHub: <a href='https://github.com/unl1cky' target='_blank'>github.com/unl1cky</a>";
 
         document.getElementById("footer-text").innerText = "© 2025 Dimash. All rights reserved.";
 
-        document.getElementById("translate-btn").innerText = "Translate to Russian";
+        document.getElementById("translate-btn").innerText = "🌍 Translate to Russian";
     }
     isEnglish = !isEnglish;
 }
