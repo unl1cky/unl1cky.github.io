@@ -19,7 +19,7 @@ function toggleLanguage() {
 
         document.getElementById("footer-text").innerText = "© 2025 Димаш. Все права защищены.";
 
-        document.getElementById("translate-btn").innerText = "🌍 Translate to English";
+        document.getElementById("translate-btn").innerText = "Translate to English";
     } else {
         document.getElementById("title").innerText = "Welcome to My Website";
         document.getElementById("intro").innerText = "Hi, I'm Dimash, a debater.";
@@ -38,7 +38,7 @@ function toggleLanguage() {
 
         document.getElementById("footer-text").innerText = "© 2025 Dimash. All rights reserved.";
 
-        document.getElementById("translate-btn").innerText = "🌍 Translate to Russian";
+        document.getElementById("translate-btn").innerText = "Translate to Russian";
     }
     isEnglish = !isEnglish;
 }
