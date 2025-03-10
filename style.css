@@ -75,3 +75,42 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
+
+/* Q&A Section */
+#qna {
+    margin-top: 30px;
+    padding: 20px;
+    background: #eef4ff;
+    border-radius: 10px;
+}
+
+.qna-item {
+    background: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.qna-item button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.qna-item button:hover {
+    background: darkred;
+}
+
+#question-input {
+    width: 70%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 10px;
+}
