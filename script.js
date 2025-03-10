@@ -51,6 +51,8 @@ function toggleLanguage() {
         document.getElementById("project2").innerText = "альфа.";
         document.getElementById("project3").innerText = "Сугма.";
 
+        document.getElementById("qna").innerText = "Вопросы и ответы";
+
         document.getElementById("contact-title").innerText = "Связаться со мной";
         document.getElementById("email").innerText = " "📧 Электронная почта: dnur5345@gmail.com";
         document.getElementById("github").innerHTML = "💻GitHub: <a href='https://github.com/unl1cky' target='_blank'>github.com/unl1cky</a>";
@@ -69,6 +71,8 @@ function toggleLanguage() {
         document.getElementById("project1").innerText = "Sigma.";
         document.getElementById("project2").innerText = "Alpha.";
         document.getElementById("project3").innerText = "Sugma.";
+
+        document.getElementById("qna").innerText = "Q&A Section";
 
         document.getElementById("contact-title").innerText = "Contact Me";
         document.getElementById("email").innerText = "📧 Email: dnur5345@gmail.com";
