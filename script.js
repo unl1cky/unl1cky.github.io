@@ -17,9 +17,9 @@ function toggleLanguage() {
         document.getElementById("email").innerText = " "📧 Электронная почта: dnur5345@gmail.com";
         document.getElementById("github").innerHTML = "💻GitHub: <a href='https://github.com/unl1cky' target='_blank'>github.com/unl1cky</a>";
 
-        document.getElementById("footer-text").innerText = "© 2025 Димаш. Все права защищены.";
-
         document.getElementById("translate-btn").innerText = "Translate to English";
+
+        
     } else {
         document.getElementById("title").innerText = "Welcome to My Website";
         document.getElementById("intro").innerText = "Hi, I'm Dimash, a debater.";
