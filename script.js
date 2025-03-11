@@ -34,7 +34,7 @@ function toggleLanguage() {
 
         document.getElementById("contact-title").innerText = "Contact Me";
         document.getElementById("email").innerText = "Email: dnur5345@gmail.com";
-        document.getElementById("github").innerHTML = "GitHub: <a href='https://github.com/unl1cky' target='_blank'>github.com/uno1cky</a>";
+        document.getElementById("github").innerHTML = "GitHub: <a href='https://github.com/unl1cky' target='_blank'>github.com/unl1cky</a>";
 
         document.getElementById("footer-text").innerText = "© 2025 Dimash. All rights reserved.";
 
