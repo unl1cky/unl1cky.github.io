@@ -1,4 +1,4 @@
-let qnaData = [];
+let qnaData = JSON.parse(localStorage.getItem("qnaData")) || [];
 
 function addQuestion() {
     const input = document.getElementById("question-input");
@@ -11,6 +11,7 @@ function addQuestion() {
     if (answerText === null || answerText.trim() === "") return;
 
     qnaData.push({ question: questionText, answer: answerText });
+    localStorage.setItem("qnaData", JSON.stringify(qnaData)); // Save to storage
     input.value = "";
     updateQnAList();
 }
@@ -33,5 +34,9 @@ function updateQnAList() {
 
 function deleteQuestion(index) {
     qnaData.splice(index, 1);
+    localStorage.setItem("qnaData", JSON.stringify(qnaData)); // Update storage
     updateQnAList();
 }
+
+// Load questions on page load
+updateQnAList();
