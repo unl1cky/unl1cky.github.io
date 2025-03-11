@@ -114,3 +114,39 @@ footer {
 button {
     margin-top: 10px;
 }
+
+/* Style for the pop-up menu */
+.menu {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark transparent background */
+}
+
+/* Menu content box */
+.menu-content {
+    width: 250px;
+    height: 100%;
+    background: #fff;
+    padding: 20px;
+    position: fixed;
+    left: -300px; /* Hidden off-screen */
+    top: 0;
+    transition: 0.3s ease-in-out;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Open state (Menu slides in) */
+.menu.show .menu-content {
+    left: 0;
+}
+
+/* Close button */
+.close {
+    font-size: 30px;
+    cursor: pointer;
+    float: right;
+}
