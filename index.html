@@ -1,83 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Button to Open the Menu -->
-<button id="openMenu">☰ Open Menu</button>
-
-<!-- Pop-up Menu -->
-<div id="popupMenu" class="menu">
-    <div class="menu-content">
-        <span id="closeMenu" class="close">&times;</span>
-        <h2>Menu</h2>
-        <ul>
-                            <li><a href="unl1cky.github.io" target="_blank" class="project-link">🏠 Home</a>
-            <li><a href="https://www.youtube.com/" target="_blank" class="project-link">📁 Projects</a>
-            <li><a href="#">❓ Q&A</a></li>
-            <li><a href="#">⚙️ Settings</a></li>
-        </ul>
-    </div>
-</div>
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Word Highlighter</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    #output { margin-top: 20px; white-space: pre-wrap; }
+  </style>
 </head>
 <body>
-    <header>
-        <h1 id="title">Welcome to My Website</h1>
-        <p id="intro">Hi, I'm Dimash, a Debater.</p>
-    </header>
 
-    <section id="about">
-        <h2 id="about-title">About Me</h2>
-        <p id="about-text">Hello! I'm passionate about Debates. I specialize in English. In my free time, I enjoy War thunder.</p>
-    </section>
+  <h2>Upload a Text File and Highlight a Word</h2>
 
-   <section id="projects">
-            <h2 id="projects-title">My Projects</h2>
-            
-            <div class="project">
-                <h3>Project 1</h3>
-                <p id="project1">Not a rick roll.</p>
-                <a href="https://youtu.be/dQw4w9WgXcQ?si=JnCepvxgdXmRSPIR" target="_blank" class="project-link">🔗 View Project</a>
-            </div>
+  <input type="file" id="fileInput" accept=".txt"><br><br>
+  <input type="text" id="wordInput" placeholder="Enter word to highlight">
+  <button onclick="highlightWord()">Highlight</button>
 
-            <div class="project">
-                <h3>Project 2</h3>
-                <p id="project2">Sigma edit.</p>
-                <a href="https://youtu.be/K9J5hHbx79g?si=0nKGPsD91v1DuGQK" target="_blank" class="project-link">🔗 View Project</a>
-            </div>
+  <div id="output"></div>
 
-            <div class="project">
-                <h3>Project 3</h3>
-                <p id="project3">Sugma.</p>
-                <a href="https://youtu.be/KMmpv1W2T6Q?si=bgCZDmPKAuFk8Av6" target="_blank" class="project-link">🔗 View Project</a>
-            </div>
-        </section>
+  <script>
+    let fileContent = "";
 
-    <section id="qna">
-            <h2>Q&A Section</h2>
-            <div id="qna-list"></div>
-            <input type="text" id="question-input" placeholder="Ask a question..." />
-            <button onclick="addQuestion()">➕ Ask</button>
-        </section>
+    document.getElementById("fileInput").addEventListener("change", function() {
+      const file = this.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          fileContent = e.target.result;
+          document.getElementById("output").textContent = fileContent;
+        };
+        reader.readAsText(file);
+      }
+    });
 
-    <section id="contact">
-        <h2 id="contact-title">Contact Me</h2>
-        <p id="email">📧 Email: dnur5345@gmail.com</p>
-        <p id="github">💻 GitHub: <a href="https://github.com/unl1cky" target="_blank">github.com/unl1cky</a></p>
-    </section>
+    function highlightWord() {
+      const word = document.getElementById("wordInput").value;
+      if (!word) return;
 
-    <button id="translate-btn" onclick="toggleLanguage()">Translate to Russian</button>
+      const regex = new RegExp(`\\b(${word})\\b`, 'gi'); // case-insensitive, full word match
+      const highlighted = fileContent.replace(regex, "<strong>$1</strong>");
+      document.getElementById("output").innerHTML = highlighted;
+    }
+  </script>
 
-
-    <footer>
-        <p id="footer-text">© 2025 Dimash. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
-    <script src="qna.js"></script>
-    <script src="menu.js"></script>
 </body>
-</html> 
+</html>
